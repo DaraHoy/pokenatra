@@ -2,8 +2,12 @@
 
 <div>
   <img src="<%= @pokemon.img_url %>" alt="poke portrait">
-  <p>Pokemon: <%= @pokemon.name %></p>
-  <p>artist - CP: <%= @pokemon.cp %></p>
-  <p>artist - Type: <%= @pokemon.poke_type %></p>
+  <p>Pokemon: <%= @pokemon.name.capitalize %></p>
+  <p>Combat Power: <%= @pokemon.cp %></p>
+  <p>Type: <%= @pokemon.poke_type.capitalize %></p>
+
+  <br>
+
+  <a href="/pokemons">All Pokemon</a>
 
 </div>
